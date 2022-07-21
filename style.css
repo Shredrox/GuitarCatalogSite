@@ -17,10 +17,22 @@ body{
     height: 50px;
 }
 
+.maincontainer{
+    max-width: 1440px;
+    margin: 10px 50px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
 .container{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 30px;
+    max-width: 1440px;
+    margin: 10px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 .navbar{
@@ -29,7 +41,7 @@ body{
     height: 60px;
 }
 
-.navbar .container{
+.navbar div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,3 +66,53 @@ body{
 .navbar a:hover{
     color: lightblue
 }
+
+.card{
+    background: white;
+    border-radius: 10px;
+    transition: transform .2s;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    margin-bottom: 10px;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transform: scale(1.1);
+}
+
+.card__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card__header h3{
+    font-size: 15px;
+}
+
+.card__header p{
+    opacity: 50%;
+}
+
+.card-black{
+    background: hsl(240, 4%, 22%);
+    
+    color: #fff;
+}
+
+.card__img{
+    width: 140px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #996ed9;
+    margin-right: 10px;
+}
+
+@media(max-width:768px){
+    .maincontainer{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+  
