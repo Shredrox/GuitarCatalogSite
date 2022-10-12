@@ -104,12 +104,13 @@ body{
 }
 
 .headerImage{
-    height: 500px;
+    height: 450px;
     background-image: url('images/guitarBackground.jpg');
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 .headerImage:before{
@@ -128,6 +129,29 @@ body{
     color:#fff;
 }
 
+footer{
+    background-color: #171717;
+    padding: 20px;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+}
+
+footer div p{
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.footerImage{
+    max-width: 20%;
+}
+
 @media(max-width:768px){
     .maincontainer{
         grid-template-columns: 1fr;
@@ -143,6 +167,8 @@ body{
         text-align: center;
     }
 
-   
+    .headerImage {
+        
+    }
 }
   
