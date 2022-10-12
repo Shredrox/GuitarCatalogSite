@@ -131,7 +131,18 @@ body{
 @media(max-width:768px){
     .maincontainer{
         grid-template-columns: 1fr;
-        margin: 10px 25px;
+        margin: auto;
     }
+
+    .headerImage h1{
+        width: 10%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+   
 }
   
