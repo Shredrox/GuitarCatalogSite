@@ -110,7 +110,7 @@ body{
 }
 
 .card-black{
-    background: hsl(240, 4%, 22%);
+    background: #020b0d;
     
     color: #fff;
 }
@@ -172,7 +172,7 @@ footer div p{
     max-width: 20%;
 }
 
-@media(max-width:868px){
+@media(max-width:950px){
     .maincontainer{
         grid-template-columns: 1fr;
         margin: auto;
@@ -187,10 +187,6 @@ footer div p{
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
-
-    .headerImage {
-        
     }
 }
   
