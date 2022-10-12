@@ -18,8 +18,8 @@ body{
 }
 
 .maincontainer{
-    max-width: 1440px;
-    margin: 10px 50px;
+    max-width: 80%;
+    margin: auto;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -28,7 +28,7 @@ body{
 }
 
 .container{
-    max-width: 1440px;
+    max-width: 100%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
