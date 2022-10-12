@@ -20,11 +20,28 @@ body{
 .maincontainer{
     max-width: 80%;
     margin: auto;
+    margin-bottom: 0px;
     padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     gap: 50px;
+    border-style: solid;
+    border-color: #324555;
+    border-radius: 2rem;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, 
+    rgba(240, 46, 170, 0.3) -10px 10px, 
+    rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px,
+    rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.mainSection{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(21,53,59,1) 100%);
+    padding: 30px;
 }
 
 .container{
@@ -37,7 +54,8 @@ body{
 }
 
 .navbar{
-    background: #454545;
+    background: rgb(61,23,23);
+    background: linear-gradient(90deg, rgba(61,23,23,1) 0%, rgba(10,24,27,1) 89%);
     color: white;
     height: 60px;
 }
@@ -68,6 +86,8 @@ body{
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
     margin-bottom: 10px;
+    border-style: solid;
+    border-color: #324555;
 }
 
 .card:hover{
@@ -152,10 +172,12 @@ footer div p{
     max-width: 20%;
 }
 
-@media(max-width:768px){
+@media(max-width:868px){
     .maincontainer{
         grid-template-columns: 1fr;
         margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .headerImage h1{
